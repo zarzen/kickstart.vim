@@ -198,19 +198,22 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " Colorscheme
-Plug 'ghifarit53/tokyonight-vim'
+" Plug 'ghifarit53/tokyonight-vim'
 
 " Set airline as statusline
-Plug 'vim-airline/vim-airline'
+Plug 'nordtheme/vim'
+Plug 'NLKNguyen/papercolor-theme'
+
+
 call plug#end()
 
 
 " [[ Configure plugins ]]
 " Set colorscheme
+set t_Co=256   " This is may or may not needed.
 set termguicolors
-let g:tokyonight_style = 'night'  " available: night, storm
-let g:tokyonight_enable_italic = 0
-colorscheme tokyonight
+set background=light
+colorscheme PaperColor
 
 
 " [[ Configure vim-which-key ]]
